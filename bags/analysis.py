@@ -19,8 +19,8 @@ BAG_PATH = sys.argv[1]
 
 TOPIC_NAME = "/wall_error"
 
-TRIM_START_SEC = 2.0    # ignore first 2 seconds
-TRIM_END_SEC = 6.5       # example: 15.0 to stop at 15 sec, or None for full bag
+TRIM_START_SEC = 0    # ignore first 2 seconds
+TRIM_END_SEC = 4       # example: 15.0 to stop at 15 sec, or None for full bag
 
 
 def read_wall_error(bag_path, topic_name):
@@ -103,7 +103,7 @@ def main():
     plt.ylabel("Wall Error (m)")
     plt.title("Wall Tracking Error vs Time")
     plt.grid(True)
-    plt.savefig("straight_speed_1")
+    plt.savefig("straight_speed_3")
 
 
 if __name__ == "__main__":
